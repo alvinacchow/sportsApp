@@ -9,6 +9,11 @@ import SwiftUI
 
 
 struct WelcomeView: View {
+    @State var showMain = false
+    @State private var isLoginSuccessful = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+
     
     func setGradientBackground() -> some View {
         let colorTop = Color(
@@ -41,24 +46,30 @@ struct WelcomeView: View {
                         .bold().font(.system(size: 40))
                         .padding()
                     
-                    Button("Continue") {}
-                        .buttonStyle(.bordered)
-                        .foregroundColor(.white)
-                        .cornerRadius(20)
+                    Button(action: {
+                        // Perform login logic here
+                        // For demonstration, assume login is successful
+                        self.isLoginSuccessful = true
+                    }) {
+                        Text("Continue")
+                            .padding()
+                            .background(Color.white)
+                            .foregroundColor(.black)
+                            .cornerRadius(20)
+                    }
+                    .padding()
+                }
+                .padding()
+                .navigationBarHidden(true)
+                .fullScreenCover(isPresented: $isLoginSuccessful) {
+                    MainScreen()
                 }
                 .multilineTextAlignment(.center)
                 .padding()
                 .cornerRadius(30)
-                .symbolVariant(.fill)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-    }
-}
-
-struct WelcomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        WelcomeView()
     }
 }
 
