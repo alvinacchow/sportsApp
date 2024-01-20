@@ -24,7 +24,7 @@ struct MainScreen: View {
         three_ledecky,
         four_hamm,
         five_vonn,
-        six_turasi,
+        six_taurasi,
         seven_felix,
         eight_king,
         nine_jennings,

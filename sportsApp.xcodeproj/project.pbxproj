@@ -16,6 +16,7 @@
 		95BB5F7C2B5AF3F70017513F /* CardPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F7B2B5AF3F70017513F /* CardPopUp.swift */; };
 		95BB5F802B5B2E950017513F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F7F2B5B2E950017513F /* Card.swift */; };
 		95BB5F822B5B30540017513F /* AthleteEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F812B5B30540017513F /* AthleteEntries.swift */; };
+		95BCD16A2B5C840D0067065E /* SwiftUITrackableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 95BCD1692B5C840D0067065E /* SwiftUITrackableScrollView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BCD16A2B5C840D0067065E /* SwiftUITrackableScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +116,9 @@
 			dependencies = (
 			);
 			name = sportsApp;
+			packageProductDependencies = (
+				95BCD1692B5C840D0067065E /* SwiftUITrackableScrollView */,
+			);
 			productName = sportsApp;
 			productReference = 95BB5F642B59FCA10017513F /* sportsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 95BB5F5B2B59FCA10017513F;
+			packageReferences = (
+				95BCD1682B5C840D0067065E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */,
+			);
 			productRefGroup = 95BB5F652B59FCA10017513F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -378,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95BCD1682B5C840D0067065E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxnatchanon/trackable-scroll-view.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95BCD1692B5C840D0067065E /* SwiftUITrackableScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95BCD1682B5C840D0067065E /* XCRemoteSwiftPackageReference "trackable-scroll-view" */;
+			productName = SwiftUITrackableScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95BB5F5C2B59FCA10017513F /* Project object */;
 }

@@ -13,21 +13,26 @@ protocol Card {
     var image : Image { get set }
     var desc : String { get set }
     
-    init (title : String, image : Image, desc : String)
 }
 
-class Athlete : Card, Identifiable{
+class Athlete: Card, Identifiable {
     var id = UUID()
     var title: String
     var image: Image
     var desc: String
+    var bday: String
+    var sport: String
 
-    required init(title: String, image: Image, desc: String) {
+    init(title: String, image: Image, bday: String, sport: String, desc: String) {
         self.title = title
         self.image = image
+        self.bday = bday
+        self.sport = sport
         self.desc = desc
     }
 }
+
+
 
 class Sport : Card, Identifiable {
     var id = UUID()
