@@ -14,6 +14,10 @@ import SwiftUI
 
 
 struct MainScreen: View {
+    
+    @State private var isNextScreenActive = false
+    @State private var selectedAthlete: Athlete?
+    
     private var athletes: [Athlete] = [
         one_williams,
         two_biles,
@@ -57,17 +61,27 @@ struct MainScreen: View {
     var body: some View {
         
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false){
                 
                 LazyVGrid(columns: adaptiveColumns, spacing: 30) {
                     ForEach(athletes) { athlete in
                         ZStack {
                             VStack {
-                                athlete.image
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 300, height: 300)
-                                    .cornerRadius(300)
+            
+                                Button(action: {
+                                    // Update the state to trigger navigation
+                                    selectedAthlete = athlete
+                                    isNextScreenActive = true
+                                }) {
+                                    athlete.image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 300, height: 300)
+                                        .cornerRadius(300)
+                                }
+                                .sheet(isPresented: $isNextScreenActive) {
+                                    CardPopUp(selectedAthlete: selectedAthlete)
+                                }
                                 
                                 Text(athlete.title)
                                     .foregroundColor(.black)
