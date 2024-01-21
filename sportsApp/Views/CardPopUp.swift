@@ -11,53 +11,51 @@ import SwiftUITrackableScrollView
 
 struct CardPopUp: View {
     var selectedAthlete: Athlete?
-//    @State private var scrollViewContentOffset = CGFloat(0)
-//    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @State private var scrollViewContentOffset = CGFloat(0)
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var body: some View {
     
         if let athlete = selectedAthlete {
-            //TrackableScrollView(.vertical, showIndicators: false, contentOffset: $scrollViewContentOffset) {
-            ScrollView(showsIndicators: false) {
-                VStack {
-                    Text(athlete.title)
-                        .bold()
-                        .font(.system(size: 50))
-                        .foregroundColor(.black)
+            ZStack {
+                TrackableScrollView(.vertical, showIndicators: false, contentOffset: $scrollViewContentOffset) {
                     
-                    athlete.image
-                        .resizable()
-                        .frame(width: 300, height: 300, alignment: .bottom)
-                        .cornerRadius(30)
-                    
-                    Text("Sport: " + athlete.sport)
-                        .font(.system(size:25))
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.black)
-                    
-                    Text("Date of Birth: " + athlete.bday)
-                        .font(.system(size:25))
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.black)
-                    
-                    Text(athlete.desc)
-                        .font(.system(size:20))
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .foregroundColor(.black)
+                    VStack {
+                        Text(athlete.title)
+                            .bold()
+                            .font(.system(size: 50))
+                            .foregroundColor(.black)
+                        
+                        athlete.image
+                            .resizable()
+                            .frame(width: 300, height: 300, alignment: .bottom)
+                            .cornerRadius(30)
+                        
+                        Text("Sport: " + athlete.sport)
+                            .font(.system(size:25))
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.black)
+                        
+                        Text("Date of Birth: " + athlete.bday)
+                            .font(.system(size:25))
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(.black)
+                        
+                        Text(athlete.desc)
+                            .font(.system(size:20))
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .foregroundColor(.black)
+                    }
+                    .foregroundColor(.black)
+                    .padding()
                 }
-                .foregroundColor(.black)
-                .padding()
-//            }
-//            .onChange(of: scrollViewContentOffset) {
-//                
-//                //TO KNOW THE VALUE OF OFFSET THAT YOU NEED TO DISMISS YOUR VIEW
-//                print(scrollViewContentOffset)
-//                
-//                //THIS IS WHERE THE DISMISS HAPPENS
-//                if scrollViewContentOffset > 180 {
-//                    mode.wrappedValue.dismiss()
-//                }
+                .onChange(of: scrollViewContentOffset) {
+                    
+                    if scrollViewContentOffset < 0 {
+                        mode.wrappedValue.dismiss()
+                    }
+                }
             }
         }
     
