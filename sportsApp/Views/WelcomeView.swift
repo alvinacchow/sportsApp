@@ -55,7 +55,7 @@ struct WelcomeView: View {
                             .padding()
                             .background(Color.white)
                             .foregroundColor(.black)
-                            .cornerRadius(20)
+                            .cornerRadius(30)
                     }
                     .padding()
                 }

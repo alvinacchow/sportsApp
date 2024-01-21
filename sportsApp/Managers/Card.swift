@@ -22,8 +22,7 @@ class Athlete: Card, Identifiable {
     var desc: String
     var bday: String
     var sport: String
-
-    init(title: String, image: Image, bday: String, sport: String, desc: String) {
+    init(title: String = "", image: Image = Image("blank"), bday: String = "", sport: String = "", desc: String = "") {
         self.title = title
         self.image = image
         self.bday = bday

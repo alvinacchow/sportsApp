@@ -11,8 +11,8 @@ import SwiftUITrackableScrollView
 
 struct CardPopUp: View {
     var selectedAthlete: Athlete?
-    @State private var scrollViewContentOffset = CGFloat(0)
-    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+//    @State private var scrollViewContentOffset = CGFloat(0)
+//    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     var body: some View {
     

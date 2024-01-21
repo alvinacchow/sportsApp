@@ -77,16 +77,16 @@ struct MainScreen: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 300, height: 300)
-                                        .cornerRadius(300)
-                                }
-                                .sheet(isPresented: $isNextScreenActive) {
-                                    CardPopUp(selectedAthlete: selectedAthlete)
+                                        .cornerRadius(30)
                                 }
                                 
                                 Text(athlete.title)
                                     .foregroundColor(.black)
                                     .font(.system(size: 20, weight: .medium, design: .rounded))
                             }
+                        }
+                        .sheet(item: $selectedAthlete) { athlete in
+                            CardPopUp(selectedAthlete: athlete)
                         }
                     }
                 }
