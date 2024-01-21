@@ -19,40 +19,41 @@ struct CardPopUp: View {
         if let athlete = selectedAthlete {
             ZStack {
                 TrackableScrollView(.vertical, showIndicators: false, contentOffset: $scrollViewContentOffset) {
-                    
-                    VStack {
-                        Text(athlete.title)
-                            .bold()
-                            .font(.system(size: 50))
-                            .foregroundColor(.black)
-                        
-                        athlete.image
-                            .resizable()
-                            .frame(width: 300, height: 300, alignment: .bottom)
-                            .cornerRadius(30)
-                        
-                        Text("Sport: " + athlete.sport)
-                            .font(.system(size:25))
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(.black)
-                        
-                        Text("Date of Birth: " + athlete.bday)
-                            .font(.system(size:25))
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(.black)
-                        
-                        Text(athlete.desc)
-                            .font(.system(size:20))
-                            .multilineTextAlignment(.center)
-                            .padding()
-                            .foregroundColor(.black)
+                    ScrollView (showsIndicators: false) {
+                        VStack {
+                            Text(athlete.title)
+                                .bold()
+                                .font(.system(size: 50))
+                                .foregroundColor(.black)
+                            
+                            athlete.image
+                                .resizable()
+                                .frame(width: 300, height: 300, alignment: .bottom)
+                                .cornerRadius(30)
+                            
+                            Text("Sport: " + athlete.sport)
+                                .font(.system(size:25))
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(.black)
+                            
+                            Text("Date of Birth: " + athlete.bday)
+                                .font(.system(size:25))
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(.black)
+                            
+                            Text(athlete.desc)
+                                .font(.system(size:20))
+                                .multilineTextAlignment(.center)
+                                .padding()
+                                .foregroundColor(.black)
+                        }
+                        .foregroundColor(.black)
+                        .padding()
                     }
-                    .foregroundColor(.black)
-                    .padding()
                 }
                 .onChange(of: scrollViewContentOffset) {
                     
-                    if scrollViewContentOffset < 0 {
+                    if scrollViewContentOffset < -50 {
                         mode.wrappedValue.dismiss()
                     }
                 }
