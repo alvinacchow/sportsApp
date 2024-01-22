@@ -47,8 +47,6 @@ struct WelcomeView: View {
                         .padding()
                     
                     Button(action: {
-                        // Perform login logic here
-                        // For demonstration, assume login is successful
                         self.isLoginSuccessful = true
                     }) {
                         Text("Continue")
@@ -62,7 +60,7 @@ struct WelcomeView: View {
                 .padding()
                 .navigationBarHidden(true)
                 .fullScreenCover(isPresented: $isLoginSuccessful) {
-                    MainScreen()
+                    HomePage()
                 }
                 .multilineTextAlignment(.center)
                 .padding()

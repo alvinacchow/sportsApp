@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9535B4F72B5DE67000261B53 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9535B4F62B5DE67000261B53 /* HomePage.swift */; };
+		9535B4F92B5DF22D00261B53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9535B4F82B5DF22D00261B53 /* Extensions.swift */; };
 		95BB5F682B59FCA10017513F /* sportsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F672B59FCA10017513F /* sportsAppApp.swift */; };
 		95BB5F6A2B59FCA10017513F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F692B59FCA10017513F /* ContentView.swift */; };
 		95BB5F6C2B59FCA20017513F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BB5F6B2B59FCA20017513F /* Assets.xcassets */; };
 		95BB5F6F2B59FCA20017513F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BB5F6E2B59FCA20017513F /* Preview Assets.xcassets */; };
 		95BB5F782B59FD3B0017513F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F772B59FD3B0017513F /* WelcomeView.swift */; };
-		95BB5F7A2B5AEFAD0017513F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F792B5AEFAD0017513F /* MainScreen.swift */; };
+		95BB5F7A2B5AEFAD0017513F /* AthleteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F792B5AEFAD0017513F /* AthleteScreen.swift */; };
 		95BB5F7C2B5AF3F70017513F /* CardPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F7B2B5AF3F70017513F /* CardPopUp.swift */; };
 		95BB5F802B5B2E950017513F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F7F2B5B2E950017513F /* Card.swift */; };
 		95BB5F822B5B30540017513F /* AthleteEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F812B5B30540017513F /* AthleteEntries.swift */; };
@@ -20,13 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9535B4F62B5DE67000261B53 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		9535B4F82B5DF22D00261B53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		95BB5F642B59FCA10017513F /* sportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BB5F672B59FCA10017513F /* sportsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsAppApp.swift; sourceTree = "<group>"; };
 		95BB5F692B59FCA10017513F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95BB5F6B2B59FCA20017513F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95BB5F6E2B59FCA20017513F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95BB5F772B59FD3B0017513F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		95BB5F792B5AEFAD0017513F /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		95BB5F792B5AEFAD0017513F /* AthleteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteScreen.swift; sourceTree = "<group>"; };
 		95BB5F7B2B5AF3F70017513F /* CardPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPopUp.swift; sourceTree = "<group>"; };
 		95BB5F7F2B5B2E950017513F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		95BB5F812B5B30540017513F /* AthleteEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteEntries.swift; sourceTree = "<group>"; };
@@ -85,8 +89,9 @@
 			children = (
 				95BB5F692B59FCA10017513F /* ContentView.swift */,
 				95BB5F772B59FD3B0017513F /* WelcomeView.swift */,
-				95BB5F792B5AEFAD0017513F /* MainScreen.swift */,
+				95BB5F792B5AEFAD0017513F /* AthleteScreen.swift */,
 				95BB5F7B2B5AF3F70017513F /* CardPopUp.swift */,
+				9535B4F62B5DE67000261B53 /* HomePage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			children = (
 				95BB5F7F2B5B2E950017513F /* Card.swift */,
 				95BB5F812B5B30540017513F /* AthleteEntries.swift */,
+				9535B4F82B5DF22D00261B53 /* Extensions.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -176,13 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95BB5F7A2B5AEFAD0017513F /* MainScreen.swift in Sources */,
+				95BB5F7A2B5AEFAD0017513F /* AthleteScreen.swift in Sources */,
+				9535B4F92B5DF22D00261B53 /* Extensions.swift in Sources */,
 				95BB5F802B5B2E950017513F /* Card.swift in Sources */,
 				95BB5F6A2B59FCA10017513F /* ContentView.swift in Sources */,
 				95BB5F782B59FD3B0017513F /* WelcomeView.swift in Sources */,
 				95BB5F822B5B30540017513F /* AthleteEntries.swift in Sources */,
 				95BB5F7C2B5AF3F70017513F /* CardPopUp.swift in Sources */,
 				95BB5F682B59FCA10017513F /* sportsAppApp.swift in Sources */,
+				9535B4F72B5DE67000261B53 /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

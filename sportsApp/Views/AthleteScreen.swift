@@ -3,17 +3,12 @@
 //  sportsApp
 //
 //  Created by Alvina Chow on 1/19/24.
-//
 
-// Using the Image view to display the image
-//            one_williams.image
-//                .resizable()
-//                .frame(width: 100, height: 100)
 import SwiftUI
 
 
 
-struct MainScreen: View {
+struct AthleteScreen: View {
     
     @State private var isNextScreenActive = false
     @State private var selectedAthlete: Athlete?
@@ -59,15 +54,14 @@ struct MainScreen: View {
     
     
     var body: some View {
-        
         NavigationView {
             ScrollView(showsIndicators: false){
-                
                 LazyVGrid(columns: adaptiveColumns, spacing: 30) {
                     ForEach(athletes) { athlete in
                         ZStack {
+                            
                             VStack {
-            
+                                
                                 Button(action: {
                                     // Update the state to trigger navigation
                                     selectedAthlete = athlete
@@ -90,23 +84,22 @@ struct MainScreen: View {
                         }
                     }
                 }
+                .padding(60)
+                .ignoresSafeArea()
+                
             }
-            .padding()
             .background(setGradientBackground())
             .ignoresSafeArea()
             
-
-            
         }
-        .padding()
         .navigationViewStyle(StackNavigationViewStyle())
         .background(setGradientBackground())
         .ignoresSafeArea()
-    }
     
+    }
         
 }
 
 #Preview {
-    MainScreen()
+    AthleteScreen()
 }

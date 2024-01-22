@@ -49,15 +49,19 @@ struct CardPopUp: View {
                         }
                         .foregroundColor(.black)
                         .padding()
+                        .cornerRadius(30)
                     }
                 }
+               
                 .onChange(of: scrollViewContentOffset) {
                     
                     if scrollViewContentOffset < -50 {
                         mode.wrappedValue.dismiss()
                     }
                 }
+                
             }
+            
         }
     
     }
