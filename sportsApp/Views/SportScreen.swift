@@ -76,9 +76,9 @@ struct SportScreen: View {
                                     .font(.system(size: 20, weight: .medium, design: .rounded))
                             }
                         }
-//                        .sheet(item: $selectedSport) { sport in
-//                            CardPopUp(selectedSport: sport)
-//                        }
+                        .sheet(item: $selectedSport) { sport in
+                            SportPopUp(selectedSport: sport)
+                        }
                     }
                 }
                 .padding(60)

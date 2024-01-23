@@ -15,12 +15,13 @@
 		95BB5F6F2B59FCA20017513F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BB5F6E2B59FCA20017513F /* Preview Assets.xcassets */; };
 		95BB5F782B59FD3B0017513F /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F772B59FD3B0017513F /* WelcomeView.swift */; };
 		95BB5F7A2B5AEFAD0017513F /* AthleteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F792B5AEFAD0017513F /* AthleteScreen.swift */; };
-		95BB5F7C2B5AF3F70017513F /* CardPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F7B2B5AF3F70017513F /* CardPopUp.swift */; };
+		95BB5F7C2B5AF3F70017513F /* AthletePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F7B2B5AF3F70017513F /* AthletePopUp.swift */; };
 		95BB5F802B5B2E950017513F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F7F2B5B2E950017513F /* Card.swift */; };
 		95BB5F822B5B30540017513F /* AthleteEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F812B5B30540017513F /* AthleteEntries.swift */; };
 		95BCD16A2B5C840D0067065E /* SwiftUITrackableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 95BCD1692B5C840D0067065E /* SwiftUITrackableScrollView */; };
 		95D6E55B2B5F66A300436A74 /* SportEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6E55A2B5F66A300436A74 /* SportEntries.swift */; };
 		95D6E55D2B5F76BD00436A74 /* SportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6E55C2B5F76BD00436A74 /* SportScreen.swift */; };
+		95D6E55F2B5F874000436A74 /* SportPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6E55E2B5F874000436A74 /* SportPopUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +34,12 @@
 		95BB5F6E2B59FCA20017513F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95BB5F772B59FD3B0017513F /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		95BB5F792B5AEFAD0017513F /* AthleteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteScreen.swift; sourceTree = "<group>"; };
-		95BB5F7B2B5AF3F70017513F /* CardPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPopUp.swift; sourceTree = "<group>"; };
+		95BB5F7B2B5AF3F70017513F /* AthletePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletePopUp.swift; sourceTree = "<group>"; };
 		95BB5F7F2B5B2E950017513F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		95BB5F812B5B30540017513F /* AthleteEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteEntries.swift; sourceTree = "<group>"; };
 		95D6E55A2B5F66A300436A74 /* SportEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEntries.swift; sourceTree = "<group>"; };
 		95D6E55C2B5F76BD00436A74 /* SportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportScreen.swift; sourceTree = "<group>"; };
+		95D6E55E2B5F874000436A74 /* SportPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPopUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				95BB5F692B59FCA10017513F /* ContentView.swift */,
+				95D6E55E2B5F874000436A74 /* SportPopUp.swift */,
 				95BB5F772B59FD3B0017513F /* WelcomeView.swift */,
 				95BB5F792B5AEFAD0017513F /* AthleteScreen.swift */,
-				95BB5F7B2B5AF3F70017513F /* CardPopUp.swift */,
+				95BB5F7B2B5AF3F70017513F /* AthletePopUp.swift */,
 				9535B4F62B5DE67000261B53 /* HomePage.swift */,
 				95D6E55C2B5F76BD00436A74 /* SportScreen.swift */,
 			);
@@ -196,9 +199,10 @@
 				95BB5F782B59FD3B0017513F /* WelcomeView.swift in Sources */,
 				95D6E55B2B5F66A300436A74 /* SportEntries.swift in Sources */,
 				95BB5F822B5B30540017513F /* AthleteEntries.swift in Sources */,
-				95BB5F7C2B5AF3F70017513F /* CardPopUp.swift in Sources */,
+				95BB5F7C2B5AF3F70017513F /* AthletePopUp.swift in Sources */,
 				95BB5F682B59FCA10017513F /* sportsAppApp.swift in Sources */,
 				9535B4F72B5DE67000261B53 /* HomePage.swift in Sources */,
+				95D6E55F2B5F874000436A74 /* SportPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

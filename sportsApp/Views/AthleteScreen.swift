@@ -94,7 +94,7 @@ struct AthleteScreen: View {
                             }
                         }
                         .sheet(item: $selectedAthlete) { athlete in
-                            CardPopUp(selectedAthlete: athlete)
+                            AthletePopUp(selectedAthlete: athlete)
                         }
                     }
                 }
