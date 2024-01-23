@@ -55,48 +55,52 @@ struct AthleteScreen: View {
     
     var body: some View {
         NavigationView {
-            ScrollView(showsIndicators: false){
-                LazyVGrid(columns: adaptiveColumns, spacing: 30) {
-                    ForEach(athletes) { athlete in
-                        ZStack {
-                            
-                            VStack {
+
+                ScrollView(showsIndicators: false){
+                    LazyVGrid(columns: adaptiveColumns, spacing: 30) {
+                        ForEach(athletes) { athlete in
+                            ZStack {
                                 
-                                Button(action: {
-                                    // Update the state to trigger navigation
-                                    selectedAthlete = athlete
-                                    isNextScreenActive = true
-                                }) {
-                                    athlete.image
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 300, height: 300)
-                                        .cornerRadius(30)
+                                VStack {
+                                    
+                                    Button(action: {
+                                        // Update the state to trigger navigation
+                                        selectedAthlete = athlete
+                                        isNextScreenActive = true
+                                    }) {
+                                        athlete.image
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 300, height: 300)
+                                            .cornerRadius(30)
+                                    }
+                                    
+                                    Text(athlete.title)
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 20, weight: .medium, design: .rounded))
                                 }
-                                
-                                Text(athlete.title)
-                                    .foregroundColor(.black)
-                                    .font(.system(size: 20, weight: .medium, design: .rounded))
+                            }
+                            .sheet(item: $selectedAthlete) { athlete in
+                                CardPopUp(selectedAthlete: athlete)
                             }
                         }
-                        .sheet(item: $selectedAthlete) { athlete in
-                            CardPopUp(selectedAthlete: athlete)
-                        }
                     }
+                    .padding(60)
+                    .ignoresSafeArea()
+                    
                 }
-                .padding(60)
+                .background(setGradientBackground())
                 .ignoresSafeArea()
                 
+                
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .background(setGradientBackground())
             .ignoresSafeArea()
             
-        }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .background(setGradientBackground())
-        .ignoresSafeArea()
     
     }
+    
         
 }
 
