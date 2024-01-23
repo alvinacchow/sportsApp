@@ -12,6 +12,7 @@ struct AthleteScreen: View {
     
     @State private var isNextScreenActive = false
     @State private var selectedAthlete: Athlete?
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     
     private var athletes: [Athlete] = [
         one_williams,
@@ -36,72 +37,82 @@ struct AthleteScreen: View {
     ]
     
     
-    func setGradientBackground() -> some View {
-        let colorTop = Color(
-            red: Double(0xfe) / 255.0,
-            green: Double(0xd9) / 255.0,
-            blue: Double(0xa1) / 255.0
-        )
-        
-        let colorBottom = Color(
-            red: Double(0xf7) / 255.0,
-            green: Double(0xa1) / 255.0,
-            blue: Double(0x5e) / 255.0
-        )
-        
-        return LinearGradient(gradient: Gradient(colors: [colorTop, colorBottom]), startPoint: .top, endPoint: .bottom)
-    }
-    
-    
-    var body: some View {
-        NavigationView {
+//    func setGradientBackground() -> some View {
+//        let colorTop = Color(hex: "#FFC4A3")
+//        let colorMiddle = Color(hex:"#FF9E7C")
+//        let colorBottom = Color(hex: "#FF7855")
+//
+//        return LinearGradient(gradient: Gradient(colors: [colorTop, colorMiddle, colorBottom]), startPoint: .top, endPoint: .bottom)
+//    }
 
-                ScrollView(showsIndicators: false){
-                    LazyVGrid(columns: adaptiveColumns, spacing: 30) {
-                        ForEach(athletes) { athlete in
-                            ZStack {
+    var body: some View {
+        
+        VStack {
+            Spacer()
+                .navigationBarBackButtonHidden(true)
+                .toolbar(content: {
+                    ToolbarItem(placement:
+                        .navigationBarLeading) {
+                            Button(action: {
+                                presentationMode.wrappedValue.dismiss()
+                            }, label: {
+                                Image(systemName: "house")
+                                    .foregroundColor(Color.white)
+                            })
+                        }
+                        
+                })
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbarBackground(Color(hex: "#FFC4A3"), for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
+                
+
+        }
+            
+        NavigationView {
+            ScrollView(showsIndicators: false){
+                LazyVGrid(columns: adaptiveColumns, spacing: 30) {
+                    ForEach(athletes) { athlete in
+                        ZStack {
+                            
+                            VStack {
                                 
-                                VStack {
-                                    
-                                    Button(action: {
-                                        // Update the state to trigger navigation
-                                        selectedAthlete = athlete
-                                        isNextScreenActive = true
-                                    }) {
-                                        athlete.image
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 300, height: 300)
-                                            .cornerRadius(30)
-                                    }
-                                    
-                                    Text(athlete.title)
-                                        .foregroundColor(.black)
-                                        .font(.system(size: 20, weight: .medium, design: .rounded))
+                                Button(action: {
+                                    selectedAthlete = athlete
+                                    isNextScreenActive = true
+                                }) {
+                                    athlete.image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 300, height: 300)
+                                        .cornerRadius(30)
                                 }
-                            }
-                            .sheet(item: $selectedAthlete) { athlete in
-                                CardPopUp(selectedAthlete: athlete)
+                                
+                                Text(athlete.title)
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 20, weight: .medium, design: .rounded))
                             }
                         }
+                        .sheet(item: $selectedAthlete) { athlete in
+                            CardPopUp(selectedAthlete: athlete)
+                        }
                     }
-                    .padding(60)
-                    .ignoresSafeArea()
-                    
                 }
-                .background(setGradientBackground())
+                .padding(60)
                 .ignoresSafeArea()
                 
-                
             }
-            .navigationViewStyle(StackNavigationViewStyle())
-            .background(setGradientBackground())
+            .background(.white)
             .ignoresSafeArea()
-            
-    
-    }
-    
+
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .background(.white)
+        .ignoresSafeArea()
         
+        
+    }
+       
 }
 
 #Preview {
