@@ -37,11 +37,15 @@ class Sport : Card, Identifiable {
     var id = UUID()
     var title: String
     var image: Image
+    var year: String
+    var loc: String
     var desc: String
-
-    required init(title: String, image: Image, desc: String) {
+    
+    init(title: String = "", image: Image = Image("blank"), year: String = "", loc: String = "", desc: String = "") {
         self.title = title
         self.image = image
+        self.year = year
+        self.loc = loc
         self.desc = desc
     }
 }

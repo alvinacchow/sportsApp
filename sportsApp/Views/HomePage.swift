@@ -51,7 +51,7 @@ struct HomePage: View {
                             }
                             .padding(10)
                             
-                            NavigationLink(destination: AthleteScreen()) {
+                            NavigationLink(destination: SportScreen()) {
                                 ZStack {
                                     Rectangle()
                                         .frame(width: 600, height: 100)
