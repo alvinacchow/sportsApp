@@ -93,11 +93,10 @@
 		95BB5F752B59FCBC0017513F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				95D6E5602B5F8AA700436A74 /* PopUp */,
 				95BB5F692B59FCA10017513F /* ContentView.swift */,
-				95D6E55E2B5F874000436A74 /* SportPopUp.swift */,
 				95BB5F772B59FD3B0017513F /* WelcomeView.swift */,
 				95BB5F792B5AEFAD0017513F /* AthleteScreen.swift */,
-				95BB5F7B2B5AF3F70017513F /* AthletePopUp.swift */,
 				9535B4F62B5DE67000261B53 /* HomePage.swift */,
 				95D6E55C2B5F76BD00436A74 /* SportScreen.swift */,
 			);
@@ -113,6 +112,15 @@
 				95D6E55A2B5F66A300436A74 /* SportEntries.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		95D6E5602B5F8AA700436A74 /* PopUp */ = {
+			isa = PBXGroup;
+			children = (
+				95BB5F7B2B5AF3F70017513F /* AthletePopUp.swift */,
+				95D6E55E2B5F874000436A74 /* SportPopUp.swift */,
+			);
+			path = PopUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
