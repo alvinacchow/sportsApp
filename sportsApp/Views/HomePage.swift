@@ -28,7 +28,7 @@ struct HomePage: View {
                         Spacer()
                         Text("HER Game, HER Rules, TrailblazHER")
                             .foregroundColor(.white)
-                            .font(.system(size: 40))
+                            .font(Font.custom("Nexa-Trial-BoldItalic", size: 50))
                             .padding(.horizontal, 50)
                         Spacer()
                         Image("RunIcon")
@@ -55,7 +55,7 @@ struct HomePage: View {
                                         
                                         Text("Athletes")
                                             .foregroundColor(.white)
-                                            .font(.title)
+                                            .font(Font.custom("Nexa-Trial-RegularItalic", size: 30))
                                     }
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 30)
@@ -73,7 +73,7 @@ struct HomePage: View {
                                         
                                         Text("Sports")
                                             .foregroundColor(.white)
-                                            .font(.title)
+                                            .font(Font.custom("Nexa-Trial-RegularItalic", size: 30))
                                     }
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 30)
@@ -91,7 +91,7 @@ struct HomePage: View {
                                             .foregroundColor(Color(hex: "#F96D80"))
                                         Text("Gear")
                                             .foregroundColor(.white)
-                                            .font(.title)
+                                            .font(Font.custom("Nexa-Trial-RegularItalic", size: 30))
                                     }
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 30)

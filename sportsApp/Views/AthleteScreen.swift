@@ -36,14 +36,6 @@ struct AthleteScreen: View {
         GridItem(.adaptive(minimum: 300))
     ]
     
-    
-//    func setGradientBackground() -> some View {
-//        let colorTop = Color(hex: "#FFC4A3")
-//        let colorMiddle = Color(hex:"#FF9E7C")
-//        let colorBottom = Color(hex: "#FF7855")
-//
-//        return LinearGradient(gradient: Gradient(colors: [colorTop, colorMiddle, colorBottom]), startPoint: .top, endPoint: .bottom)
-//    }
 
     var body: some View {
         
@@ -90,7 +82,7 @@ struct AthleteScreen: View {
                                 
                                 Text(athlete.title)
                                     .foregroundColor(.black)
-                                    .font(.system(size: 20, weight: .medium, design: .rounded))
+                                    .font(Font.custom("Nexa-Trial-Book", size: 20))
                             }
                         }
                         .sheet(item: $selectedAthlete) { athlete in

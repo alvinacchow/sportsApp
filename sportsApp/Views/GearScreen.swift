@@ -74,7 +74,7 @@ struct GearScreen: View {
                                 
                                 Text(gear.title)
                                     .foregroundColor(.black)
-                                    .font(.system(size: 20, weight: .medium, design: .rounded))
+                                    .font(Font.custom("Nexa-Trial-Book", size: 20))
                             }
                         }
                         .sheet(item: $selectedGear) { gear in

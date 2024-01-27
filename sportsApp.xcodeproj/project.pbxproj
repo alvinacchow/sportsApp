@@ -12,6 +12,24 @@
 		95A65DC32B6481EC00AE80E6 /* GearEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A65DC22B6481EC00AE80E6 /* GearEntries.swift */; };
 		95A65DC52B64869E00AE80E6 /* GearScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A65DC42B64869E00AE80E6 /* GearScreen.swift */; };
 		95A65DC72B64872600AE80E6 /* GearPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A65DC62B64872600AE80E6 /* GearPopUp.swift */; };
+		95A65DE52B659CB700AE80E6 /* Nexa-Trial-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DE42B659CB700AE80E6 /* Nexa-Trial-Black.ttf */; };
+		95A65DE82B659D0C00AE80E6 /* Nexa-Trial-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DE72B659D0C00AE80E6 /* Nexa-Trial-BlackItalic.ttf */; };
+		95A65DF92B659D5400AE80E6 /* Nexa-Trial-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DE92B659D5300AE80E6 /* Nexa-Trial-ExtraBold.ttf */; };
+		95A65DFA2B659D5400AE80E6 /* Nexa-Trial-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DEA2B659D5300AE80E6 /* Nexa-Trial-ExtraLight.ttf */; };
+		95A65DFB2B659D5400AE80E6 /* Nexa-Trial-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DEB2B659D5300AE80E6 /* Nexa-Trial-BookItalic.ttf */; };
+		95A65DFC2B659D5400AE80E6 /* Nexa-Trial-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DEC2B659D5300AE80E6 /* Nexa-Trial-ExtraLightItalic.ttf */; };
+		95A65DFD2B659D5400AE80E6 /* Nexa-Trial-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DED2B659D5300AE80E6 /* Nexa-Trial-Thin.ttf */; };
+		95A65DFE2B659D5400AE80E6 /* Nexa-Trial-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DEE2B659D5300AE80E6 /* Nexa-Trial-Heavy.ttf */; };
+		95A65DFF2B659D5400AE80E6 /* Nexa-Trial-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DEF2B659D5300AE80E6 /* Nexa-Trial-HeavyItalic.ttf */; };
+		95A65E002B659D5400AE80E6 /* Nexa-Trial-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF02B659D5300AE80E6 /* Nexa-Trial-LightItalic.ttf */; };
+		95A65E012B659D5400AE80E6 /* Nexa-Trial-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF12B659D5300AE80E6 /* Nexa-Trial-Book.ttf */; };
+		95A65E022B659D5400AE80E6 /* Nexa-Trial-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF22B659D5300AE80E6 /* Nexa-Trial-ThinItalic.ttf */; };
+		95A65E032B659D5400AE80E6 /* Nexa-Trial-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF32B659D5400AE80E6 /* Nexa-Trial-RegularItalic.ttf */; };
+		95A65E042B659D5400AE80E6 /* Nexa-Trial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF42B659D5400AE80E6 /* Nexa-Trial-Regular.ttf */; };
+		95A65E052B659D5400AE80E6 /* Nexa-Trial-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF52B659D5400AE80E6 /* Nexa-Trial-BoldItalic.ttf */; };
+		95A65E062B659D5400AE80E6 /* Nexa-Trial-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF62B659D5400AE80E6 /* Nexa-Trial-Bold.ttf */; };
+		95A65E072B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF72B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf */; };
+		95A65E082B659D5400AE80E6 /* Nexa-Trial-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF82B659D5400AE80E6 /* Nexa-Trial-Light.ttf */; };
 		95BB5F682B59FCA10017513F /* sportsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F672B59FCA10017513F /* sportsAppApp.swift */; };
 		95BB5F6A2B59FCA10017513F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F692B59FCA10017513F /* ContentView.swift */; };
 		95BB5F6C2B59FCA20017513F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BB5F6B2B59FCA20017513F /* Assets.xcassets */; };
@@ -33,6 +51,25 @@
 		95A65DC22B6481EC00AE80E6 /* GearEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearEntries.swift; sourceTree = "<group>"; };
 		95A65DC42B64869E00AE80E6 /* GearScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearScreen.swift; sourceTree = "<group>"; };
 		95A65DC62B64872600AE80E6 /* GearPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearPopUp.swift; sourceTree = "<group>"; };
+		95A65DE42B659CB700AE80E6 /* Nexa-Trial-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Black.ttf"; sourceTree = "<group>"; };
+		95A65DE62B659CC800AE80E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		95A65DE72B659D0C00AE80E6 /* Nexa-Trial-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-BlackItalic.ttf"; sourceTree = "<group>"; };
+		95A65DE92B659D5300AE80E6 /* Nexa-Trial-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraBold.ttf"; sourceTree = "<group>"; };
+		95A65DEA2B659D5300AE80E6 /* Nexa-Trial-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraLight.ttf"; sourceTree = "<group>"; };
+		95A65DEB2B659D5300AE80E6 /* Nexa-Trial-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-BookItalic.ttf"; sourceTree = "<group>"; };
+		95A65DEC2B659D5300AE80E6 /* Nexa-Trial-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		95A65DED2B659D5300AE80E6 /* Nexa-Trial-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Thin.ttf"; sourceTree = "<group>"; };
+		95A65DEE2B659D5300AE80E6 /* Nexa-Trial-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Heavy.ttf"; sourceTree = "<group>"; };
+		95A65DEF2B659D5300AE80E6 /* Nexa-Trial-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		95A65DF02B659D5300AE80E6 /* Nexa-Trial-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-LightItalic.ttf"; sourceTree = "<group>"; };
+		95A65DF12B659D5300AE80E6 /* Nexa-Trial-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Book.ttf"; sourceTree = "<group>"; };
+		95A65DF22B659D5300AE80E6 /* Nexa-Trial-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ThinItalic.ttf"; sourceTree = "<group>"; };
+		95A65DF32B659D5400AE80E6 /* Nexa-Trial-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-RegularItalic.ttf"; sourceTree = "<group>"; };
+		95A65DF42B659D5400AE80E6 /* Nexa-Trial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Regular.ttf"; sourceTree = "<group>"; };
+		95A65DF52B659D5400AE80E6 /* Nexa-Trial-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-BoldItalic.ttf"; sourceTree = "<group>"; };
+		95A65DF62B659D5400AE80E6 /* Nexa-Trial-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Bold.ttf"; sourceTree = "<group>"; };
+		95A65DF72B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		95A65DF82B659D5400AE80E6 /* Nexa-Trial-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Light.ttf"; sourceTree = "<group>"; };
 		95BB5F642B59FCA10017513F /* sportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BB5F672B59FCA10017513F /* sportsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsAppApp.swift; sourceTree = "<group>"; };
 		95BB5F692B59FCA10017513F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95A65DE32B659C9F00AE80E6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				95A65DF62B659D5400AE80E6 /* Nexa-Trial-Bold.ttf */,
+				95A65DF52B659D5400AE80E6 /* Nexa-Trial-BoldItalic.ttf */,
+				95A65DF12B659D5300AE80E6 /* Nexa-Trial-Book.ttf */,
+				95A65DEB2B659D5300AE80E6 /* Nexa-Trial-BookItalic.ttf */,
+				95A65DE92B659D5300AE80E6 /* Nexa-Trial-ExtraBold.ttf */,
+				95A65DF72B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf */,
+				95A65DEA2B659D5300AE80E6 /* Nexa-Trial-ExtraLight.ttf */,
+				95A65DEC2B659D5300AE80E6 /* Nexa-Trial-ExtraLightItalic.ttf */,
+				95A65DEE2B659D5300AE80E6 /* Nexa-Trial-Heavy.ttf */,
+				95A65DEF2B659D5300AE80E6 /* Nexa-Trial-HeavyItalic.ttf */,
+				95A65DF82B659D5400AE80E6 /* Nexa-Trial-Light.ttf */,
+				95A65DF02B659D5300AE80E6 /* Nexa-Trial-LightItalic.ttf */,
+				95A65DF42B659D5400AE80E6 /* Nexa-Trial-Regular.ttf */,
+				95A65DF32B659D5400AE80E6 /* Nexa-Trial-RegularItalic.ttf */,
+				95A65DED2B659D5300AE80E6 /* Nexa-Trial-Thin.ttf */,
+				95A65DF22B659D5300AE80E6 /* Nexa-Trial-ThinItalic.ttf */,
+				95A65DE42B659CB700AE80E6 /* Nexa-Trial-Black.ttf */,
+				95A65DE72B659D0C00AE80E6 /* Nexa-Trial-BlackItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		95BB5F5B2B59FCA10017513F = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +141,8 @@
 		95BB5F662B59FCA10017513F /* sportsApp */ = {
 			isa = PBXGroup;
 			children = (
+				95A65DE62B659CC800AE80E6 /* Info.plist */,
+				95A65DE32B659C9F00AE80E6 /* Fonts */,
 				95BB5F762B59FD080017513F /* Managers */,
 				95BB5F752B59FCBC0017513F /* Views */,
 				95BB5F672B59FCA10017513F /* sportsAppApp.swift */,
@@ -196,8 +260,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A65E032B659D5400AE80E6 /* Nexa-Trial-RegularItalic.ttf in Resources */,
+				95A65E022B659D5400AE80E6 /* Nexa-Trial-ThinItalic.ttf in Resources */,
+				95A65E072B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf in Resources */,
+				95A65DE52B659CB700AE80E6 /* Nexa-Trial-Black.ttf in Resources */,
+				95A65DFB2B659D5400AE80E6 /* Nexa-Trial-BookItalic.ttf in Resources */,
+				95A65E002B659D5400AE80E6 /* Nexa-Trial-LightItalic.ttf in Resources */,
+				95A65DFA2B659D5400AE80E6 /* Nexa-Trial-ExtraLight.ttf in Resources */,
+				95A65E042B659D5400AE80E6 /* Nexa-Trial-Regular.ttf in Resources */,
+				95A65DF92B659D5400AE80E6 /* Nexa-Trial-ExtraBold.ttf in Resources */,
 				95BB5F6F2B59FCA20017513F /* Preview Assets.xcassets in Resources */,
+				95A65E082B659D5400AE80E6 /* Nexa-Trial-Light.ttf in Resources */,
 				95BB5F6C2B59FCA20017513F /* Assets.xcassets in Resources */,
+				95A65E062B659D5400AE80E6 /* Nexa-Trial-Bold.ttf in Resources */,
+				95A65DFF2B659D5400AE80E6 /* Nexa-Trial-HeavyItalic.ttf in Resources */,
+				95A65DFD2B659D5400AE80E6 /* Nexa-Trial-Thin.ttf in Resources */,
+				95A65E052B659D5400AE80E6 /* Nexa-Trial-BoldItalic.ttf in Resources */,
+				95A65DE82B659D0C00AE80E6 /* Nexa-Trial-BlackItalic.ttf in Resources */,
+				95A65DFC2B659D5400AE80E6 /* Nexa-Trial-ExtraLightItalic.ttf in Resources */,
+				95A65E012B659D5400AE80E6 /* Nexa-Trial-Book.ttf in Resources */,
+				95A65DFE2B659D5400AE80E6 /* Nexa-Trial-Heavy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +441,7 @@
 				DEVELOPMENT_TEAM = 52S2TF45DB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sportsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -392,6 +475,7 @@
 				DEVELOPMENT_TEAM = 52S2TF45DB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sportsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

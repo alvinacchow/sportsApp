@@ -16,59 +16,13 @@ struct WelcomeView: View {
 
     
     func setGradientBackground() -> some View {
-        let colorTop = Color(
-            red: Double(0xfe) / 255.0,
-            green: Double(0xd9) / 255.0,
-            blue: Double(0xa1) / 255.0
-        )
+        let colorTop = Color(hex: "#FFC4A3")
+        let colorMiddle = Color(hex:"#FF9E7C")
+        let colorBottom = Color(hex: "#FF7855")
         
-        let colorBottom = Color(
-            red: Double(0xf7) / 255.0,
-            green: Double(0xa1) / 255.0,
-            blue: Double(0x5e) / 255.0
-        )
-        
-        return LinearGradient(gradient: Gradient(colors: [colorTop, colorBottom]), startPoint: .top, endPoint: .bottom)
+        return LinearGradient(gradient: Gradient(colors: [colorTop, colorMiddle, colorBottom]), startPoint: .top, endPoint: .bottom)
     }
     
-//    var body: some View {
-//        ZStack {
-//            setGradientBackground()
-//                .edgesIgnoringSafeArea(.all)
-//            
-//            VStack {
-//                VStack(spacing: 20) {
-//                    Image("Background")
-//                        .resizable()
-//                        .frame(width: 300, height: 300, alignment: .bottom)
-//                    
-//                    Text("trailblazHER")
-//                        .bold().font(.system(size: 40))
-//                        .padding()
-//                    
-//                    Button(action: {
-//                        self.isLoginSuccessful = true
-//                    }) {
-//                        Text("Continue")
-//                            .padding()
-//                            .background(Color.white)
-//                            .foregroundColor(.black)
-//                            .cornerRadius(30)
-//                    }
-//                    .padding()
-//                }
-//                .padding()
-//                .navigationBarHidden(true)
-//                .fullScreenCover(isPresented: $isLoginSuccessful) {
-//                    HomePage()
-//                }
-//                .multilineTextAlignment(.center)
-//                .padding()
-//                .cornerRadius(30)
-//                .frame(maxWidth: .infinity, maxHeight: .infinity)
-//            }
-//        }
-//    }
     var body: some View {
         ZStack {
             setGradientBackground()
@@ -80,8 +34,8 @@ struct WelcomeView: View {
                         .resizable()
                         .frame(width: 300, height: 300, alignment: .bottom)
                     
-                    Text("trailblazHER")
-                        .bold().font(.system(size: 40))
+                    Text("TrailblazHER")
+                        .font(Font.custom("Nexa-Trial-BoldItalic", size: 70))
                         .padding()
                 }
                 .padding()

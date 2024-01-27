@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Nexa-Trial-Black.ttf</string>
+		<string>Nexa-Trial-BlackItalic.ttf</string>
+		<string>Nexa-Trial-Bold.ttf</string>
+		<string>Nexa-Trial-BoldItalic.ttf</string>
+		<string>Nexa-Trial-Book.ttf</string>
+		<string>Nexa-Trial-BookItalic.ttf</string>
+		<string>Nexa-Trial-ExtraBold.ttf</string>
+		<string>Nexa-Trial-ExtraBoldItalic.ttf</string>
+		<string>Nexa-Trial-ExtraLight.ttf</string>
+		<string>Nexa-Trial-ExtraLightItalic.ttf</string>
+		<string>Nexa-Trial-Heavy.ttf</string>
+		<string>Nexa-Trial-HeavyItalic.ttf</string>
+		<string>Nexa-Trial-Light.ttf</string>
+		<string>Nexa-Trial-LightItalic.ttf</string>
+		<string>Nexa-Trial-RegularItalic.ttf</string>
+		<string>Nexa-Trial-Regular.ttf</string>
+		<string>Nexa-Trial-Thin.ttf</string>
+		<string>Nexa-Trial-ThinItalic.ttf</string>
+	</array>
+</dict>
+</plist>

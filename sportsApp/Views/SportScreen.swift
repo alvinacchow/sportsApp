@@ -73,7 +73,7 @@ struct SportScreen: View {
                                 
                                 Text(sport.title)
                                     .foregroundColor(.black)
-                                    .font(.system(size: 20, weight: .medium, design: .rounded))
+                                    .font(Font.custom("Nexa-Trial-Book", size: 20))
                             }
                         }
                         .sheet(item: $selectedSport) { sport in
