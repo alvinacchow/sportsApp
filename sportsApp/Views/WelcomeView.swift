@@ -31,6 +31,44 @@ struct WelcomeView: View {
         return LinearGradient(gradient: Gradient(colors: [colorTop, colorBottom]), startPoint: .top, endPoint: .bottom)
     }
     
+//    var body: some View {
+//        ZStack {
+//            setGradientBackground()
+//                .edgesIgnoringSafeArea(.all)
+//            
+//            VStack {
+//                VStack(spacing: 20) {
+//                    Image("Background")
+//                        .resizable()
+//                        .frame(width: 300, height: 300, alignment: .bottom)
+//                    
+//                    Text("trailblazHER")
+//                        .bold().font(.system(size: 40))
+//                        .padding()
+//                    
+//                    Button(action: {
+//                        self.isLoginSuccessful = true
+//                    }) {
+//                        Text("Continue")
+//                            .padding()
+//                            .background(Color.white)
+//                            .foregroundColor(.black)
+//                            .cornerRadius(30)
+//                    }
+//                    .padding()
+//                }
+//                .padding()
+//                .navigationBarHidden(true)
+//                .fullScreenCover(isPresented: $isLoginSuccessful) {
+//                    HomePage()
+//                }
+//                .multilineTextAlignment(.center)
+//                .padding()
+//                .cornerRadius(30)
+//                .frame(maxWidth: .infinity, maxHeight: .infinity)
+//            }
+//        }
+//    }
     var body: some View {
         ZStack {
             setGradientBackground()
@@ -45,20 +83,15 @@ struct WelcomeView: View {
                     Text("trailblazHER")
                         .bold().font(.system(size: 40))
                         .padding()
-                    
-                    Button(action: {
-                        self.isLoginSuccessful = true
-                    }) {
-                        Text("Continue")
-                            .padding()
-                            .background(Color.white)
-                            .foregroundColor(.black)
-                            .cornerRadius(30)
-                    }
-                    .padding()
                 }
                 .padding()
                 .navigationBarHidden(true)
+                .onAppear {
+                    // Delay navigation by 3 seconds
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                        self.isLoginSuccessful = true
+                    }
+                }
                 .fullScreenCover(isPresented: $isLoginSuccessful) {
                     HomePage()
                 }
