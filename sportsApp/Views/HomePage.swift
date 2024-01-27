@@ -20,28 +20,24 @@ struct HomePage: View {
     var body: some View {
         NavigationView {
             VStack {
-                
                 ZStack {
-                    setGradientBackground().ignoresSafeArea()
-                
-                    HStack {
-                        Spacer()
-                        Text("HER Game, HER Rules, TrailblazHER")
-                            .foregroundColor(.white)
-                            .font(Font.custom("Nexa-Trial-BoldItalic", size: 50))
-                            .padding(.horizontal, 50)
-                        Spacer()
-                        Image("RunIcon")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 300, height: 300, alignment: .center)
-                            .padding(.horizontal, 200)
-                    }
+                    Image("Banner")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: UIScreen.main.bounds.width, height: 500)
+                        .clipped()
+                    
+                    
+                    Text("HER Game, HER Rules, TrailblazHER")
+                        .foregroundColor(.white)
+                        .font(Font.custom("Nexa-Trial-BoldItalic", size: 50))
+                        .frame(maxWidth: .infinity, alignment: .center)
+                    
                 }
-                
+                .offset(y:-50)
+
                 
                 ZStack{
-                    
                     LazyVStack(alignment: .center, spacing: 30) {
                         ZStack {
                             VStack(alignment: .center) {
@@ -102,9 +98,10 @@ struct HomePage: View {
                         }
                     }
                 }
-                .frame(height: 700)
             }
+            
         }
+        
         
     .navigationViewStyle(StackNavigationViewStyle())
     .navigationBarHidden(true)
