@@ -7,14 +7,12 @@
 
 import SwiftUI
 
-
 struct WelcomeView: View {
+    let layoutProperties: LayoutProperties
     @State var showMain = false
     @State private var isLoginSuccessful = false
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
-
-    
     func setGradientBackground() -> some View {
         let colorTop = Color(hex: "#FFC4A3")
         let colorMiddle = Color(hex:"#FF9E7C")
@@ -32,11 +30,14 @@ struct WelcomeView: View {
                 VStack(spacing: 20) {
                     Image("Background")
                         .resizable()
-                        .frame(width: 300, height: 300, alignment: .bottom)
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(layoutProperties.dimensValues.medium)
+                        .shadow(radius: layoutProperties.dimensValues.medium)
+                        .frame(width: 200, height: 200)
                     
                     Text("TrailblazHER")
-                        .font(Font.custom("Nexa-Trial-BoldItalic", size: 70))
-                        .padding()
+                        .font(Font.custom("Nexa-Trial-BoldItalic", size: layoutProperties.customFontSize.extraLarge))
+                        
                 }
                 .padding()
                 .navigationBarHidden(true)
@@ -59,6 +60,27 @@ struct WelcomeView: View {
 }
 
 
-#Preview {
-    WelcomeView()
+struct WelcomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group{
+            WelcomeView(
+                layoutProperties: getPreviewLayoutProperties(landscape: false, height: 844, width: 390)
+            )
+            .previewDevice("iPhone")
+            
+            WelcomeView(
+                layoutProperties: getPreviewLayoutProperties(landscape: false, height: 1194, width: 834)
+            )
+            .previewDevice("iPad Pro (11-inch) (3rd generation)")
+            WelcomeView(
+                layoutProperties: getPreviewLayoutProperties(landscape: true, height: 844, width: 390)
+            )
+            .previewDevice("iPhone")
+            
+            WelcomeView(
+                layoutProperties: getPreviewLayoutProperties(landscape: true, height: 1194, width: 834)
+            )
+            .previewDevice("iPad Pro (11-inch) (3rd generation)")
+        }
+    }
 }

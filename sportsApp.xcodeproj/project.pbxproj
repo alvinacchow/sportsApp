@@ -30,7 +30,7 @@
 		95A65E062B659D5400AE80E6 /* Nexa-Trial-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF62B659D5400AE80E6 /* Nexa-Trial-Bold.ttf */; };
 		95A65E072B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF72B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf */; };
 		95A65E082B659D5400AE80E6 /* Nexa-Trial-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95A65DF82B659D5400AE80E6 /* Nexa-Trial-Light.ttf */; };
-		95BB5F682B59FCA10017513F /* sportsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F672B59FCA10017513F /* sportsAppApp.swift */; };
+		95BB5F682B59FCA10017513F /* sportsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F672B59FCA10017513F /* sportsApp.swift */; };
 		95BB5F6A2B59FCA10017513F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB5F692B59FCA10017513F /* ContentView.swift */; };
 		95BB5F6C2B59FCA20017513F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BB5F6B2B59FCA20017513F /* Assets.xcassets */; };
 		95BB5F6F2B59FCA20017513F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BB5F6E2B59FCA20017513F /* Preview Assets.xcassets */; };
@@ -43,6 +43,7 @@
 		95D6E55B2B5F66A300436A74 /* SportEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6E55A2B5F66A300436A74 /* SportEntries.swift */; };
 		95D6E55D2B5F76BD00436A74 /* SportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6E55C2B5F76BD00436A74 /* SportScreen.swift */; };
 		95D6E55F2B5F874000436A74 /* SportPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D6E55E2B5F874000436A74 /* SportPopUp.swift */; };
+		95E91A232B67800400C00BB3 /* ResponsiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E91A222B67800400C00BB3 /* ResponsiveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,7 +72,7 @@
 		95A65DF72B659D5400AE80E6 /* Nexa-Trial-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		95A65DF82B659D5400AE80E6 /* Nexa-Trial-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nexa-Trial-Light.ttf"; sourceTree = "<group>"; };
 		95BB5F642B59FCA10017513F /* sportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		95BB5F672B59FCA10017513F /* sportsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsAppApp.swift; sourceTree = "<group>"; };
+		95BB5F672B59FCA10017513F /* sportsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsApp.swift; sourceTree = "<group>"; };
 		95BB5F692B59FCA10017513F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95BB5F6B2B59FCA20017513F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95BB5F6E2B59FCA20017513F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		95D6E55A2B5F66A300436A74 /* SportEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportEntries.swift; sourceTree = "<group>"; };
 		95D6E55C2B5F76BD00436A74 /* SportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportScreen.swift; sourceTree = "<group>"; };
 		95D6E55E2B5F874000436A74 /* SportPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPopUp.swift; sourceTree = "<group>"; };
+		95E91A222B67800400C00BB3 /* ResponsiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +147,7 @@
 				95A65DE32B659C9F00AE80E6 /* Fonts */,
 				95BB5F762B59FD080017513F /* Managers */,
 				95BB5F752B59FCBC0017513F /* Views */,
-				95BB5F672B59FCA10017513F /* sportsAppApp.swift */,
+				95BB5F672B59FCA10017513F /* sportsApp.swift */,
 				95BB5F6B2B59FCA20017513F /* Assets.xcassets */,
 				95BB5F6D2B59FCA20017513F /* Preview Content */,
 			);
@@ -170,6 +172,7 @@
 				9535B4F62B5DE67000261B53 /* HomePage.swift */,
 				95D6E55C2B5F76BD00436A74 /* SportScreen.swift */,
 				95A65DC42B64869E00AE80E6 /* GearScreen.swift */,
+				95E91A222B67800400C00BB3 /* ResponsiveView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,10 +301,11 @@
 				95BB5F782B59FD3B0017513F /* WelcomeView.swift in Sources */,
 				95D6E55B2B5F66A300436A74 /* SportEntries.swift in Sources */,
 				95BB5F822B5B30540017513F /* AthleteEntries.swift in Sources */,
+				95E91A232B67800400C00BB3 /* ResponsiveView.swift in Sources */,
 				95BB5F7C2B5AF3F70017513F /* AthletePopUp.swift in Sources */,
 				95A65DC32B6481EC00AE80E6 /* GearEntries.swift in Sources */,
 				95A65DC52B64869E00AE80E6 /* GearScreen.swift in Sources */,
-				95BB5F682B59FCA10017513F /* sportsAppApp.swift in Sources */,
+				95BB5F682B59FCA10017513F /* sportsApp.swift in Sources */,
 				9535B4F72B5DE67000261B53 /* HomePage.swift in Sources */,
 				95D6E55F2B5F874000436A74 /* SportPopUp.swift in Sources */,
 				95A65DC72B64872600AE80E6 /* GearPopUp.swift in Sources */,
@@ -446,7 +450,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +485,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
