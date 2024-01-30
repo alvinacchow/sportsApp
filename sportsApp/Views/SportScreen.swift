@@ -26,7 +26,14 @@ struct SportScreen: View {
         five_hockey,
         six_boxing,
         seven_racing,
-        eight_mma
+        eight_mma,
+        nine_weightlifting,
+        ten_cycling,
+        eleven_lacrosse,
+        twelve_ultimate,
+        thirteen_bowling,
+        fourteen_fencing,
+        fifteen_curling
     ]
     
     

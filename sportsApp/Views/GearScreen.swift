@@ -25,7 +25,13 @@ struct GearScreen: View {
         one_sportsBra,
         two_tampon,
         three_shorts,
-        four_headbands
+        four_headbands,
+        five_hydration,
+        six_helmets,
+        seven_mouthguard,
+        eight_safetyPads,
+        nine_braces,
+        ten_footwear
     ]
     
 
