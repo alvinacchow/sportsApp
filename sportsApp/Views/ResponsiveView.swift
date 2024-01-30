@@ -17,11 +17,13 @@ struct ResponsiveView<Content:View>: View {
             let landScape = height<width
             let dimensValues = CustomDimensValues(height:height, width:width)
             let customFontSize = CustomFontSize(height:height, width:width)
+            let customSquareSize = CustomSquareSize(height: height, width: width)
             content(
                 LayoutProperties(
                     landscape: landScape,
                     dimensValues: dimensValues,
                     customFontSize: customFontSize,
+                    customSquareSize: customSquareSize,
                     height: height,
                     width: width
                 )
@@ -29,6 +31,50 @@ struct ResponsiveView<Content:View>: View {
         }
     }
 }
+
+
+struct CustomSquareSize {
+    let small:CGFloat
+    let smallMedium:CGFloat
+    let medium:CGFloat
+    let mediumLarge:CGFloat
+    let large:CGFloat
+    let extraLarge:CGFloat
+    init(height:CGFloat, width:CGFloat){
+        let widthToCalculate = height<width ? height : width
+        switch widthToCalculate {
+        case _ where widthToCalculate<700:
+            small = 150
+            smallMedium = 200
+            medium = 250
+            mediumLarge = 300
+            large = 350
+            extraLarge = 400
+        case _ where widthToCalculate>=700 && widthToCalculate<1000:
+            small = 200
+            smallMedium = 250
+            medium = 300
+            mediumLarge = 350
+            large = 400
+            extraLarge = 450
+        case _ where widthToCalculate>=1000:
+            small = 250
+            smallMedium = 300
+            medium = 350
+            mediumLarge = 400
+            large = 450
+            extraLarge = 500
+        default:
+            small = 200
+            smallMedium = 250
+            medium = 300
+            mediumLarge = 350
+            large = 400
+            extraLarge = 450
+        }
+    }
+}
+
 
 struct CustomFontSize {
     let small:CGFloat
@@ -72,6 +118,8 @@ struct CustomFontSize {
     }
 }
 
+
+
 struct CustomDimensValues {
     let small:CGFloat
     let smallMedium:CGFloat
@@ -90,19 +138,19 @@ struct CustomDimensValues {
                     large = 17
                     extraLarge = 22
                 case _ where widthToCalculate>=700 && widthToCalculate<1000:
-                    small = 14
-                    smallMedium = 16
-                    medium = 19
-                    mediumLarge = 22
-                    large = 24
-                    extraLarge = 29
-                case _ where widthToCalculate>=1000:
-                    small = 17
+                    small = 15
                     smallMedium = 20
-                    medium = 23
-                    mediumLarge = 25
-                    large = 28
-                    extraLarge = 32
+                    medium = 27
+                    mediumLarge = 34
+                    large = 42
+                    extraLarge = 50
+                case _ where widthToCalculate>=1000:
+                    small = 18
+                    smallMedium = 25
+                    medium = 27
+                    mediumLarge = 36
+                    large = 45
+                    extraLarge = 60
                 default:
                     small = 5
                     smallMedium = 8
@@ -118,6 +166,7 @@ struct LayoutProperties {
     var landscape:Bool
     var dimensValues:CustomDimensValues
     var customFontSize:CustomFontSize
+    var customSquareSize: CustomSquareSize
     var height:CGFloat
     var width:CGFloat
 }
@@ -127,6 +176,7 @@ func getPreviewLayoutProperties(landscape:Bool, height: CGFloat, width: CGFloat)
         landscape: landscape,
         dimensValues: CustomDimensValues(height: height, width: width),
         customFontSize: CustomFontSize(height: height, width: width),
+        customSquareSize: CustomSquareSize(height: height, width: width),
         height: height,
         width: width
     )

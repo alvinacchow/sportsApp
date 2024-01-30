@@ -31,7 +31,6 @@ struct WelcomeView: View {
                     Image("Background")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .cornerRadius(layoutProperties.dimensValues.medium)
                         .shadow(radius: layoutProperties.dimensValues.medium)
                         .frame(width: 200, height: 200)
                     
@@ -48,7 +47,7 @@ struct WelcomeView: View {
                     }
                 }
                 .fullScreenCover(isPresented: $isLoginSuccessful) {
-                    HomePage()
+                    HomePage(layoutProperties: layoutProperties)
                 }
                 .multilineTextAlignment(.center)
                 .padding()
