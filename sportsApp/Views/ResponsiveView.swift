@@ -44,12 +44,12 @@ struct CustomSquareSize {
         let widthToCalculate = height<width ? height : width
         switch widthToCalculate {
         case _ where widthToCalculate<700:
-            small = 150
-            smallMedium = 200
-            medium = 250
-            mediumLarge = 300
-            large = 350
-            extraLarge = 400
+            small = 100
+            smallMedium = 150
+            medium = 200
+            mediumLarge = 250
+            large = 300
+            extraLarge = 350
         case _ where widthToCalculate>=700 && widthToCalculate<1000:
             small = 200
             smallMedium = 250

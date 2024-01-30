@@ -18,28 +18,32 @@ struct HomePage: View {
                     ZStack {
                         Image("Banner")
                             .resizable()
-                            .opacity(0.6)
+                            .overlay(Color.black)
+                            .opacity(0.4)
+                            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .scaledToFill()
-                            .frame(width: UIScreen.main.bounds.width, alignment: .top)
-                            .edgesIgnoringSafeArea(.horizontal)
+                            .frame(width: UIScreen.main.bounds.width)
                             .clipped()
                         
-                        Spacer()
-                        Text("HER Game, HER Rules, TrailblazHER")
-                            .foregroundColor(.white)
-                            .font(Font.custom("Nexa-Trial-HeavyItalic", size: layoutProperties.customFontSize.extraLarge * 2))
-                            .multilineTextAlignment(.center)
-                            .frame(width: UIScreen.main.bounds.width, alignment: .center)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .padding()
-                        
-                        Image(systemName: "chevron.down.circle")
-                            .resizable()
-                            .foregroundColor(.white)
-                            .frame(width: layoutProperties.customFontSize.extraLarge * 1.5, height: layoutProperties.customFontSize.extraLarge * 1.5, alignment: .center)
-                            .offset(y : 150)
-                    }
+                        VStack {
+                            Text("HER Game, HER Rules, TrailblazHER")
+                                .foregroundColor(.white)
+                                .font(Font.custom("Nexa-Trial-HeavyItalic", size: layoutProperties.customFontSize.extraLarge * 2))
+                                .multilineTextAlignment(.center)
+                                .frame(width: UIScreen.main.bounds.width, alignment: .center)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .padding()
+                            
+                            Image(systemName: "chevron.down.circle")
+                                .resizable()
+                                .foregroundColor(.white)
+                                .frame(width: layoutProperties.customFontSize.extraLarge * 1.5, height: layoutProperties.customFontSize.extraLarge * 1.5, alignment: .center)
+                            }
+                        }
+                
                     .frame(width: UIScreen.main.bounds.width)
+                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                    
                     
                     HStack {
                         NavigationLink (destination: AthleteScreen()) {
@@ -102,13 +106,12 @@ struct HomePage: View {
                                 }
                             }
                         }
-                    
                     }
+                    .frame(width: UIScreen.main.bounds.width)
                     
                 }
-                
             }
-            
+            .edgesIgnoringSafeArea(.top)
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .navigationBarHidden(true)
