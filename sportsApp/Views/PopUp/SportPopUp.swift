@@ -11,12 +11,19 @@ import SwiftUITrackableScrollView
 
 
 struct SportPopUp: View {
+    
+    let layoutProperties: LayoutProperties
     var selectedSport: Sport?
     @State private var scrollViewContentOffset = CGFloat(0)
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
-    var body: some View {
+    init(layoutProperties: LayoutProperties, selectedSport: Sport) {
+            self.layoutProperties = layoutProperties
+            self.selectedSport = selectedSport
+        }
     
+    
+    var body: some View {
         if let sport = selectedSport {
             ZStack {
                 TrackableScrollView(.vertical, showIndicators: false, contentOffset: $scrollViewContentOffset) {
@@ -24,26 +31,34 @@ struct SportPopUp: View {
                         VStack {
                             Text(sport.title)
                                 .bold()
-                                .font(.system(size: 50))
+                                .font(.custom(
+                                    "Avenir-Black",
+                                    size: layoutProperties.customFontSize.extraLarge))
                                 .foregroundColor(.black)
                             
                             sport.image
                                 .resizable()
-                                .frame(width: 300, height: 300, alignment: .bottom)
+                                .frame(width: layoutProperties.customSquareSize.medium, height: layoutProperties.customSquareSize.medium, alignment: .bottom)
                                 .cornerRadius(30)
                             
                             Text("Location of Origin: " + sport.loc)
-                                .font(.system(size:25))
+                                .font(.custom(
+                                    "Avenir-Roman",
+                                    size: layoutProperties.customFontSize.large))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(.black)
                             
                             Text("Year: " + sport.year)
-                                .font(.system(size:25))
+                                .font(.custom(
+                                    "Avenir-Roman",
+                                    size: layoutProperties.customFontSize.large))
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(.black)
                             
                             Text(sport.desc)
-                                .font(.system(size:20))
+                                .font(.custom(
+                                "Avenir-Book",
+                                size: layoutProperties.customFontSize.large))
                                 .multilineTextAlignment(.center)
                                 .padding()
                                 .foregroundColor(.black)
@@ -65,14 +80,5 @@ struct SportPopUp: View {
             
         }
     
-    }
-}
-
-
-struct SportCardPopUp_Previews: PreviewProvider {
-    static var previews: some View {
-       SportPopUp(selectedSport:Sport(title: "Rugby", image: Image("Rugby"), year: "1800s", loc: "England", desc: "abcdefg")
-       )
-
     }
 }

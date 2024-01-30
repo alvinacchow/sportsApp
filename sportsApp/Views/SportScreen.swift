@@ -9,10 +9,14 @@ import Foundation
 import SwiftUI
 
 struct SportScreen: View {
-    
+    let layoutProperties: LayoutProperties
     @State private var isNextScreenActive = false
     @State private var selectedSport: Sport?
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    
+    init(layoutProperties: LayoutProperties) {
+            self.layoutProperties = layoutProperties
+        }
     
     private var sports: [Sport] = [
         one_rugby,
@@ -25,11 +29,12 @@ struct SportScreen: View {
         eight_mma
     ]
     
-    private let adaptiveColumns = [
-        GridItem(.adaptive(minimum: 300))
-    ]
+    
 
     var body: some View {
+        let adaptiveColumns = [
+            GridItem(.adaptive(minimum: layoutProperties.customSquareSize.medium))
+        ]
         VStack {
             Spacer()
                 .navigationBarBackButtonHidden(true)
@@ -54,7 +59,7 @@ struct SportScreen: View {
             
         NavigationView {
             ScrollView(showsIndicators: false){
-                LazyVGrid(columns: adaptiveColumns, spacing: 30) {
+                LazyVGrid(columns: adaptiveColumns, spacing: layoutProperties.customFontSize.small) {
                     ForEach(sports) { sport in
                         ZStack {
                             
@@ -67,21 +72,23 @@ struct SportScreen: View {
                                     sport.image
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 300, height: 300)
+                                        .frame(width: layoutProperties.customSquareSize.medium, height: layoutProperties.customSquareSize.medium)
                                         .cornerRadius(30)
                                 }
                                 
                                 Text(sport.title)
                                     .foregroundColor(.black)
-                                    .font(Font.custom("Nexa-Trial-Book", size: 20))
+                                    .font(Font.custom(
+                                        "Avenir-Medium",
+                                        size: layoutProperties.customFontSize.medium))
                             }
                         }
                         .sheet(item: $selectedSport) { sport in
-                            SportPopUp(selectedSport: sport)
+                            SportPopUp(layoutProperties: layoutProperties, selectedSport: sport)
                         }
                     }
                 }
-                .padding(60)
+                .padding(layoutProperties.customSquareSize.small)
                 .ignoresSafeArea()
                 
             }
@@ -96,8 +103,4 @@ struct SportScreen: View {
         
     }
        
-}
-
-#Preview {
-    SportScreen()
 }

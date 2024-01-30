@@ -28,25 +28,25 @@ struct HomePage: View {
                         VStack {
                             Text("HER Game, HER Rules, TrailblazHER")
                                 .foregroundColor(.white)
-                                .font(Font.custom("Nexa-Trial-HeavyItalic", size: layoutProperties.customFontSize.extraLarge * 2))
-                                .multilineTextAlignment(.center)
                                 .frame(width: UIScreen.main.bounds.width, alignment: .center)
-                                .fixedSize(horizontal: false, vertical: true)
-                                .padding()
+                                .font(.custom(
+                                       "Avenir-BlackOblique",
+                                       size: layoutProperties.customFontSize.extraLarge * 1.6))
+                                .multilineTextAlignment(.center)
                             
-                            Image(systemName: "chevron.down.circle")
+                            Image(systemName: "chevron.down")
                                 .resizable()
                                 .foregroundColor(.white)
-                                .frame(width: layoutProperties.customFontSize.extraLarge * 1.5, height: layoutProperties.customFontSize.extraLarge * 1.5, alignment: .center)
-                            }
+                                .frame(width: layoutProperties.customFontSize.extraLarge * 1.5, height: layoutProperties.customFontSize.extraLarge, alignment: .center)
                         }
+                    }
                 
                     .frame(width: UIScreen.main.bounds.width)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     
                     
                     HStack {
-                        NavigationLink (destination: AthleteScreen()) {
+                        NavigationLink (destination: AthleteScreen(layoutProperties: layoutProperties)) {
                             ZStack {
                                 Rectangle()
                                     .frame(width: layoutProperties.customSquareSize.medium, height: layoutProperties.customSquareSize.medium * 1.1)
@@ -61,12 +61,14 @@ struct HomePage: View {
                                 
                                     Text("Athletes")
                                         .foregroundColor(.white)
-                                        .font(Font.custom("Nexa-Trial-RegularItalic", size: layoutProperties.customFontSize.large))
+                                        .font(.custom(
+                                            "Avenir-Oblique",
+                                            size: layoutProperties.customFontSize.large))
                                         .offset(y: -layoutProperties.customFontSize.extraLarge)
                                 }
                             }
                         }
-                        NavigationLink(destination: SportScreen()) {
+                        NavigationLink(destination: SportScreen(layoutProperties: layoutProperties)) {
                             ZStack {
                                 Rectangle()
                                     .frame(width: layoutProperties.customSquareSize.medium, height: layoutProperties.customSquareSize.medium * 1.1)
@@ -81,13 +83,15 @@ struct HomePage: View {
                     
                                     Text("Sports")
                                         .foregroundColor(.white)
-                                        .font(Font.custom("Nexa-Trial-RegularItalic", size: layoutProperties.customFontSize.large))
+                                        .font(.custom(
+                                            "Avenir-Oblique",
+                                            size: layoutProperties.customFontSize.large))
                                         .offset(y: -layoutProperties.customFontSize.extraLarge)
                                 }
                             }
                             
                         }
-                        NavigationLink(destination: GearScreen()) {
+                        NavigationLink(destination: GearScreen(layoutProperties: layoutProperties)) {
                             ZStack {
                                 Rectangle()
                                     .frame(width: layoutProperties.customSquareSize.medium, height: layoutProperties.customSquareSize.medium * 1.1)
@@ -101,7 +105,9 @@ struct HomePage: View {
                                     
                                     Text("Gear")
                                         .foregroundColor(.white)
-                                        .font(Font.custom("Nexa-Trial-RegularItalic", size: layoutProperties.customFontSize.large))
+                                        .font(.custom(
+                                            "Avenir-Oblique",
+                                            size: layoutProperties.customFontSize.large))
                                         .offset(y: -layoutProperties.customFontSize.extraLarge)
                                 }
                             }

@@ -9,10 +9,14 @@ import SwiftUI
 
 
 struct AthleteScreen: View {
-    
+    let layoutProperties: LayoutProperties
     @State private var isNextScreenActive = false
     @State private var selectedAthlete: Athlete?
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    
+    init(layoutProperties: LayoutProperties) {
+            self.layoutProperties = layoutProperties
+        }
     
     private var athletes: [Athlete] = [
         one_williams,
@@ -32,12 +36,10 @@ struct AthleteScreen: View {
         fifteen_mclaughlin
     ]
     
-    private let adaptiveColumns = [
-        GridItem(.adaptive(minimum: 300))
-    ]
-    
-
     var body: some View {
+        let adaptiveColumns = [
+            GridItem(.adaptive(minimum: layoutProperties.customSquareSize.medium))
+        ]
         
         VStack {
             Spacer()
@@ -63,12 +65,10 @@ struct AthleteScreen: View {
             
         NavigationView {
             ScrollView(showsIndicators: false){
-                LazyVGrid(columns: adaptiveColumns, spacing: 30) {
+                LazyVGrid(columns: adaptiveColumns, spacing: layoutProperties.customFontSize.small) {
                     ForEach(athletes) { athlete in
                         ZStack {
-                            
                             VStack {
-                                
                                 Button(action: {
                                     selectedAthlete = athlete
                                     isNextScreenActive = true
@@ -76,21 +76,23 @@ struct AthleteScreen: View {
                                     athlete.image
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 300, height: 300)
+                                        .frame(width: layoutProperties.customSquareSize.medium, height: layoutProperties.customSquareSize.medium)
                                         .cornerRadius(30)
                                 }
                                 
                                 Text(athlete.title)
                                     .foregroundColor(.black)
-                                    .font(Font.custom("Nexa-Trial-Book", size: 20))
+                                    .font(Font.custom(
+                                        "Avenir-Medium",
+                                        size: layoutProperties.customFontSize.medium))
                             }
                         }
                         .sheet(item: $selectedAthlete) { athlete in
-                            AthletePopUp(selectedAthlete: athlete)
+                            AthletePopUp(layoutProperties: layoutProperties, selectedAthlete: athlete)
                         }
                     }
                 }
-                .padding(60)
+                .padding(layoutProperties.customSquareSize.small)
                 .ignoresSafeArea()
                 
             }
@@ -105,8 +107,4 @@ struct AthleteScreen: View {
         
     }
        
-}
-
-#Preview {
-    AthleteScreen()
 }

@@ -35,7 +35,9 @@ struct WelcomeView: View {
                         .frame(width: 200, height: 200)
                     
                     Text("TrailblazHER")
-                        .font(Font.custom("Nexa-Trial-BoldItalic", size: layoutProperties.customFontSize.extraLarge))
+                        .font(.custom(
+                               "Avenir-HeavyOblique",
+                               size: layoutProperties.customFontSize.extraLarge))
                         
                 }
                 .padding()
