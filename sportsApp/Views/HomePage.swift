@@ -115,6 +115,9 @@ struct HomePage: View {
                     }
                     .frame(width: UIScreen.main.bounds.width)
                     
+                    VStack {
+                        NewsView()
+                    }
                 }
             }
             .edgesIgnoringSafeArea(.top)
