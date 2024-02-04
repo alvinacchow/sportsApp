@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9535B4F72B5DE67000261B53 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9535B4F62B5DE67000261B53 /* HomePage.swift */; };
 		9535B4F92B5DF22D00261B53 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9535B4F82B5DF22D00261B53 /* Extensions.swift */; };
+		959A50E82B6F130100D57E66 /* SportsCredits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 959A50E72B6F130100D57E66 /* SportsCredits.rtf */; };
+		959A50EA2B6F1A2300D57E66 /* AthleteCredits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 959A50E92B6F1A2300D57E66 /* AthleteCredits.rtf */; };
+		959A50EC2B6F20C500D57E66 /* GearCredits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 959A50EB2B6F20C500D57E66 /* GearCredits.rtf */; };
 		95A65DC32B6481EC00AE80E6 /* GearEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A65DC22B6481EC00AE80E6 /* GearEntries.swift */; };
 		95A65DC52B64869E00AE80E6 /* GearScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A65DC42B64869E00AE80E6 /* GearScreen.swift */; };
 		95A65DC72B64872600AE80E6 /* GearPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A65DC62B64872600AE80E6 /* GearPopUp.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		9535B4F62B5DE67000261B53 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		9535B4F82B5DF22D00261B53 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		959A50E72B6F130100D57E66 /* SportsCredits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = SportsCredits.rtf; sourceTree = "<group>"; };
+		959A50E92B6F1A2300D57E66 /* AthleteCredits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = AthleteCredits.rtf; sourceTree = "<group>"; };
+		959A50EB2B6F20C500D57E66 /* GearCredits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = GearCredits.rtf; sourceTree = "<group>"; };
 		95A65DC22B6481EC00AE80E6 /* GearEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearEntries.swift; sourceTree = "<group>"; };
 		95A65DC42B64869E00AE80E6 /* GearScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearScreen.swift; sourceTree = "<group>"; };
 		95A65DC62B64872600AE80E6 /* GearPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearPopUp.swift; sourceTree = "<group>"; };
@@ -63,6 +69,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		959A50E62B6F12D100D57E66 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				959A50E72B6F130100D57E66 /* SportsCredits.rtf */,
+				959A50EB2B6F20C500D57E66 /* GearCredits.rtf */,
+				959A50E92B6F1A2300D57E66 /* AthleteCredits.rtf */,
+			);
+			path = Credits;
+			sourceTree = "<group>";
+		};
 		95BB5F5B2B59FCA10017513F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				95A65DE62B659CC800AE80E6 /* Info.plist */,
+				959A50E62B6F12D100D57E66 /* Credits */,
 				95BB5F762B59FD080017513F /* Managers */,
 				95BB5F752B59FCBC0017513F /* Views */,
 				95BB5F672B59FCA10017513F /* sportsApp.swift */,
@@ -202,7 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				95BB5F6F2B59FCA20017513F /* Preview Assets.xcassets in Resources */,
+				959A50EC2B6F20C500D57E66 /* GearCredits.rtf in Resources */,
+				959A50EA2B6F1A2300D57E66 /* AthleteCredits.rtf in Resources */,
 				95BB5F6C2B59FCA20017513F /* Assets.xcassets in Resources */,
+				959A50E82B6F130100D57E66 /* SportsCredits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
