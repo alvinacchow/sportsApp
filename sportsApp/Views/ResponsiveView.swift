@@ -32,7 +32,6 @@ struct ResponsiveView<Content:View>: View {
     }
 }
 
-
 struct CustomSquareSize {
     let small:CGFloat
     let smallMedium:CGFloat
@@ -75,7 +74,6 @@ struct CustomSquareSize {
     }
 }
 
-
 struct CustomFontSize {
     let small:CGFloat
     let smallMedium:CGFloat
@@ -117,8 +115,6 @@ struct CustomFontSize {
         }
     }
 }
-
-
 
 struct CustomDimensValues {
     let small:CGFloat

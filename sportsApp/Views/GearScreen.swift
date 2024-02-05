@@ -8,14 +8,11 @@
 import Foundation
 import SwiftUI
 
-
-
 struct GearScreen: View {
     let layoutProperties: LayoutProperties
     @State private var isNextScreenActive = false
     @State private var selectedGear: Gear?
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
-    
     
     init(layoutProperties: LayoutProperties) {
             self.layoutProperties = layoutProperties
@@ -33,10 +30,9 @@ struct GearScreen: View {
         nine_braces,
         ten_footwear
     ]
-    
 
     var body: some View {
-        
+
         let adaptiveColumns = [
             GridItem(.adaptive(minimum: layoutProperties.customSquareSize.medium))
         ]
@@ -54,13 +50,10 @@ struct GearScreen: View {
                                     .foregroundColor(Color.white)
                             })
                         }
-                        
                 })
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbarBackground(Color(hex: "#F96D80"), for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
-                
-
         }
             
         NavigationView {
@@ -83,7 +76,7 @@ struct GearScreen: View {
                                 }
                                 
                                 Text(gear.title)
-                                    .foregroundColor(.black)
+                                    //.foregroundColor(.black)
                                     .font(Font.custom(
                                         "Avenir-Medium",
                                         size: layoutProperties.customFontSize.medium))
@@ -94,19 +87,13 @@ struct GearScreen: View {
                         }
                     }
                 }
-                .padding(layoutProperties.customSquareSize.small)
+                .padding(layoutProperties.customSquareSize.small * 0.5)
                 .ignoresSafeArea()
-                
             }
-            .background(.white)
             .ignoresSafeArea()
-
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .background(.white)
         .ignoresSafeArea()
-        
-        
     }
-       
 }

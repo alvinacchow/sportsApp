@@ -31,8 +31,6 @@ class Athlete: Card, Identifiable {
     }
 }
 
-
-
 class Sport : Card, Identifiable {
     var id = UUID()
     var title: String
@@ -62,4 +60,3 @@ class Gear : Card, Identifiable {
         self.desc = desc
     }
 }
-

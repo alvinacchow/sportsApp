@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 let one_rugby = Sport(title: "Rugby", image: Image("Rugby"), year: "1500s", loc: "England",
     desc: "Rugby, a dynamic collision of skill, strategy, and camaraderie, has evolved into a globally cherished team sport. Played with an oval-shaped ball, the game features two teams of 15 players each, determined to score points by crossing the opponent's goal line or kicking the ball through the uprights.\n\nAt its core, rugby demands a unique blend of physicality and finesse. The primary objective is to score tries, achieved by carrying the ball across the opponent's goal line, and conversions or kicks for additional points. The game unfolds through phases of play, including scrums, lineouts, and rucks, where players vie for possession and strategic advantage.\n\nPlayers pass, kick, and run with the ball, relying on teamwork and individual skill. In rugby union, the scrum and lineout are distinctive set pieces, while rugby league emphasizes a faster pace with a six-tackle possession format. Both versions share a commitment to sportsmanship and mutual respect.\n\nWhether in the grassroots of local matches or the grandeur of international competitions like the Rugby World Cup, rugby's universal appeal lies in its ability to unite players and fans alike through the exhilarating spectacle of this physically demanding yet beautifully strategic sport.")
 

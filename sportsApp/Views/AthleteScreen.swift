@@ -15,8 +15,8 @@ struct AthleteScreen: View {
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     
     init(layoutProperties: LayoutProperties) {
-            self.layoutProperties = layoutProperties
-        }
+        self.layoutProperties = layoutProperties
+    }
     
     private var athletes: [Athlete] = [
         one_williams,
@@ -46,23 +46,21 @@ struct AthleteScreen: View {
                 .navigationBarBackButtonHidden(true)
                 .toolbar(content: {
                     ToolbarItem(placement:
-                        .navigationBarLeading) {
-                            Button(action: {
-                                presentationMode.wrappedValue.dismiss()
-                            }, label: {
-                                Image(systemName: "house")
-                                    .foregroundColor(Color.white)
-                            })
-                        }
-                        
+                            .navigationBarLeading) {
+                                Button(action: {
+                                    presentationMode.wrappedValue.dismiss()
+                                }, label: {
+                                    Image(systemName: "house")
+                                        .foregroundColor(Color.white)
+                                })
+                            }
                 })
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbarBackground(Color(hex: "#FFC4A3"), for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
-                
-
-        }
             
+        }
+        
         NavigationView {
             ScrollView(showsIndicators: false){
                 LazyVGrid(columns: adaptiveColumns, spacing: layoutProperties.customFontSize.small) {
@@ -79,9 +77,7 @@ struct AthleteScreen: View {
                                         .frame(width: layoutProperties.customSquareSize.medium, height: layoutProperties.customSquareSize.medium)
                                         .cornerRadius(30)
                                 }
-                                
                                 Text(athlete.title)
-                                    .foregroundColor(.black)
                                     .font(Font.custom(
                                         "Avenir-Medium",
                                         size: layoutProperties.customFontSize.medium))
@@ -92,19 +88,13 @@ struct AthleteScreen: View {
                         }
                     }
                 }
-                .padding(layoutProperties.customSquareSize.small)
+                .padding(layoutProperties.customSquareSize.small * 0.5)
                 .ignoresSafeArea()
-                
             }
-            .background(.white)
             .ignoresSafeArea()
-
         }
         .navigationViewStyle(StackNavigationViewStyle())
         .background(.white)
         .ignoresSafeArea()
-        
-        
     }
-       
 }

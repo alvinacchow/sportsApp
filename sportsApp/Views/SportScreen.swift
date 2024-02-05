@@ -35,8 +35,6 @@ struct SportScreen: View {
         fourteen_fencing,
         fifteen_curling
     ]
-    
-    
 
     var body: some View {
         let adaptiveColumns = [
@@ -60,8 +58,6 @@ struct SportScreen: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbarBackground(Color(hex: "#FF9A76"), for: .navigationBar)
                 .toolbarBackground(.visible, for: .navigationBar)
-                
-
         }
             
         NavigationView {
@@ -84,7 +80,6 @@ struct SportScreen: View {
                                 }
                                 
                                 Text(sport.title)
-                                    .foregroundColor(.black)
                                     .font(Font.custom(
                                         "Avenir-Medium",
                                         size: layoutProperties.customFontSize.medium))
@@ -95,11 +90,10 @@ struct SportScreen: View {
                         }
                     }
                 }
-                .padding(layoutProperties.customSquareSize.small)
+                .padding(layoutProperties.customSquareSize.small * 0.5)
                 .ignoresSafeArea()
                 
             }
-            .background(.white)
             .ignoresSafeArea()
 
         }

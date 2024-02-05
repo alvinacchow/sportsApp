@@ -32,7 +32,6 @@ struct GearPopUp: View {
                                 .font(.custom(
                                     "Avenir-Black",
                                     size: layoutProperties.customFontSize.extraLarge))
-                                .foregroundColor(.black)
                             
                             gear.image
                                 .resizable()
@@ -42,12 +41,10 @@ struct GearPopUp: View {
                             Text(gear.desc)
                                 .font(.custom(
                                 "Avenir-Book",
-                                size: layoutProperties.customFontSize.large))
+                                size: layoutProperties.customFontSize.medium))
                                 .multilineTextAlignment(.center)
                                 .padding()
-                                .foregroundColor(.black)
                         }
-                        .foregroundColor(.black)
                         .padding()
                         .cornerRadius(30)
                     }

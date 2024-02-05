@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct HomePage: View {
     let layoutProperties: LayoutProperties
     var body: some View {
@@ -43,7 +42,6 @@ struct HomePage: View {
                 
                     .frame(width: UIScreen.main.bounds.width)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    
                     
                     HStack {
                         NavigationLink (destination: AthleteScreen(layoutProperties: layoutProperties)) {
@@ -89,7 +87,6 @@ struct HomePage: View {
                                         .offset(y: -layoutProperties.customFontSize.extraLarge)
                                 }
                             }
-                            
                         }
                         NavigationLink(destination: GearScreen(layoutProperties: layoutProperties)) {
                             ZStack {
@@ -140,7 +137,6 @@ struct HomeRootView<Content:View>:View{
                content()
            }
        }
-       
    }
 }
 

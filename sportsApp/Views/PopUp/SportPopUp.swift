@@ -34,7 +34,6 @@ struct SportPopUp: View {
                                 .font(.custom(
                                     "Avenir-Black",
                                     size: layoutProperties.customFontSize.extraLarge))
-                                .foregroundColor(.black)
                             
                             sport.image
                                 .resizable()
@@ -46,24 +45,20 @@ struct SportPopUp: View {
                                     "Avenir-Roman",
                                     size: layoutProperties.customFontSize.large))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(.black)
                             
                             Text("Year: " + sport.year)
                                 .font(.custom(
                                     "Avenir-Roman",
                                     size: layoutProperties.customFontSize.large))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(.black)
                             
                             Text(sport.desc)
                                 .font(.custom(
                                 "Avenir-Book",
-                                size: layoutProperties.customFontSize.large))
+                                size: layoutProperties.customFontSize.medium))
                                 .multilineTextAlignment(.center)
                                 .padding()
-                                .foregroundColor(.black)
                         }
-                        .foregroundColor(.black)
                         .padding()
                         .cornerRadius(30)
                     }

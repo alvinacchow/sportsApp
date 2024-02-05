@@ -33,7 +33,6 @@ struct AthletePopUp: View {
                                 .font(.custom(
                                     "Avenir-Black",
                                     size: layoutProperties.customFontSize.extraLarge))
-                                .foregroundColor(.black)
                             
                             athlete.image
                                 .resizable()
@@ -45,24 +44,20 @@ struct AthletePopUp: View {
                                     "Avenir-Roman",
                                     size: layoutProperties.customFontSize.large))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(.black)
                             
                             Text("Date of Birth: " + athlete.bday)
                                 .font(.custom(
                                     "Avenir-Roman",
                                     size: layoutProperties.customFontSize.large))
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(.black)
                             
                             Text(athlete.desc)
                                 .font(.custom(
                                 "Avenir-Book",
-                                size: layoutProperties.customFontSize.large))
+                                size: layoutProperties.customFontSize.medium))
                                 .multilineTextAlignment(.center)
                                 .padding()
-                                .foregroundColor(.black)
                         }
-                        .foregroundColor(.black)
                         .padding()
                         .cornerRadius(30)
                     }
