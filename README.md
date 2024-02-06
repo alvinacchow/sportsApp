@@ -9,7 +9,7 @@ Faced with the Swift Student Challenge, I began to reflect on areas of my life f
 This project symbolizes a full-circle journey for me. Had I not left competitive sports, I might not have delved into coding. Reconnecting with my competitive spirit, I aspire to empower young female athletes to persevere in sports through Trailblazer.
 
 # Technologies Used 
-For brainstorming, Figma was foundational in designing UI/UX and creating mockups. Development was conducted on Xcode in Swift, with GitHub integration for tracking progress. Learning Swift primarily from YouTube and Udemy, I was introduced to and incorporated features like Stacks, ScrollView, and NavigationView, alongside SF Symbols for aesthetic appeal. The SwiftUITrackableScrollView package sourced from GitHub enhanced app functionality. Stack Overflow aided in debugging processes and ChatGPT helped refine written descriptions.
+For brainstorming, Figma was foundational in designing UI/UX and creating mockups. Development was conducted on Xcode in Swift, with GitHub integration for tracking progress. Learning Swift primarily from YouTube and Udemy, I was introduced to and incorporated features like Stacks, ScrollView, and NavigationView, alongside SF Symbols for aesthetic appeal. The SwiftUITrackableScrollView package sourced from GitHub enhanced app functionality.
 
 Graphics were sourced from Canva's AI tools and Wikimedia Commons, optimized with photo compression and scaling software. The Xcode simulator facilitated app previewing and progress guidance. This comprehensive use of technologies ensured Trailblazer's development, allowing me to develop a platform that empowers female athletes. 
 
