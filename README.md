@@ -12,3 +12,11 @@ This project symbolizes a full-circle journey for me. Had I not left competitive
 For brainstorming, Figma was foundational in designing UI/UX and creating mockups. Development was conducted on Xcode in Swift, with GitHub integration for tracking progress. Learning Swift primarily from YouTube and Udemy, I was introduced to and incorporated features like Stacks, ScrollView, and NavigationView, alongside SF Symbols for aesthetic appeal. The SwiftUITrackableScrollView package sourced from GitHub enhanced app functionality. Stack Overflow aided in debugging processes and ChatGPT helped refine written descriptions.
 
 Graphics were sourced from Canva's AI tools and Wikimedia Commons, optimized with photo compression and scaling software. The Xcode simulator facilitated app previewing and progress guidance. This comprehensive use of technologies ensured Trailblazer's development, allowing me to develop a platform that empowers female athletes. 
+
+# Inteface
+
+![homeScreen](https://github.com/alvinacchow/sportsApp/assets/127649620/e74caf13-0142-4437-a11c-9117b6795be9)
+
+![athleteScreen](https://github.com/alvinacchow/sportsApp/assets/127649620/970bbc3e-24e3-4e33-ad3c-7a6fc502c6f6)
+
+![innerScreen](https://github.com/alvinacchow/sportsApp/assets/127649620/169b0472-31e2-43be-857c-84f894a780d7)
