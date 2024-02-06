@@ -41,7 +41,7 @@
 		95A65DC42B64869E00AE80E6 /* GearScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearScreen.swift; sourceTree = "<group>"; };
 		95A65DC62B64872600AE80E6 /* GearPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GearPopUp.swift; sourceTree = "<group>"; };
 		95A65DE62B659CC800AE80E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		95BB5F642B59FCA10017513F /* sportsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sportsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BB5F642B59FCA10017513F /* Trailblazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trailblazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BB5F672B59FCA10017513F /* sportsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsApp.swift; sourceTree = "<group>"; };
 		95BB5F692B59FCA10017513F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		95BB5F6B2B59FCA20017513F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		95BB5F652B59FCA10017513F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95BB5F642B59FCA10017513F /* sportsApp.app */,
+				95BB5F642B59FCA10017513F /* Trailblazer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,9 +157,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95BB5F632B59FCA10017513F /* sportsApp */ = {
+		95BB5F632B59FCA10017513F /* Trailblazer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95BB5F722B59FCA20017513F /* Build configuration list for PBXNativeTarget "sportsApp" */;
+			buildConfigurationList = 95BB5F722B59FCA20017513F /* Build configuration list for PBXNativeTarget "Trailblazer" */;
 			buildPhases = (
 				95BB5F602B59FCA10017513F /* Sources */,
 				95BB5F612B59FCA10017513F /* Frameworks */,
@@ -169,12 +169,12 @@
 			);
 			dependencies = (
 			);
-			name = sportsApp;
+			name = Trailblazer;
 			packageProductDependencies = (
 				95BCD1692B5C840D0067065E /* SwiftUITrackableScrollView */,
 			);
 			productName = sportsApp;
-			productReference = 95BB5F642B59FCA10017513F /* sportsApp.app */;
+			productReference = 95BB5F642B59FCA10017513F /* Trailblazer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95BB5F632B59FCA10017513F /* sportsApp */,
+				95BB5F632B59FCA10017513F /* Trailblazer */,
 			);
 		};
 /* End PBXProject section */
@@ -455,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95BB5F722B59FCA20017513F /* Build configuration list for PBXNativeTarget "sportsApp" */ = {
+		95BB5F722B59FCA20017513F /* Build configuration list for PBXNativeTarget "Trailblazer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95BB5F732B59FCA20017513F /* Debug */,
