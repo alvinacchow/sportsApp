@@ -16,7 +16,7 @@ Graphics were sourced from Canva's AI tools and Wikimedia Commons, optimized wit
 # About Swift Student Challenge
 Apple is proud to support and uplift the next generation of developers, creators, and entrepreneurs with the Swift Student Challenge. The Challenge has given thousands of student developers the opportunity to showcase their creativity and coding capabilities through app playgrounds, and earn real-world skills that they can take into their careers and beyond. From connecting peers to mental health resources, to identifying ways to support sustainability efforts on campus, Swift Student Challenge participants around the world are using their creativity to develop apps that solve real-world problems. We encourage you to brainstorm and develop thoughtful ideas for apps that address important issues in your community and beyond.
 
-# Inteface
+# Interface
 
 ![homeScreen](https://github.com/alvinacchow/sportsApp/assets/127649620/e74caf13-0142-4437-a11c-9117b6795be9)
 
